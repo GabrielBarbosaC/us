@@ -1,0 +1,53 @@
+
+/* Estilos do modal */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #2c002c;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery img {
+  margin: 10px 0;
+}
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Posicionamento fixo */
+  z-index: 1; /* Z-index alto para sobrepor tudo */
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto; /* Adiciona uma barra de rolagem caso necessário */
+  background-color: rgb(0, 0, 0); /* Fallback de cor do fundo */
+  background-color: rgba(0, 0, 0, 0.9); /* Cor do fundo */
+  padding: 10px;
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+}
+/* Estilos da imagem no modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+img {
+  width: 70%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
